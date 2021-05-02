@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond Lending Bank</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="loanApp.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Diamond Lending Bank</h1>
+
+<fieldset>
+    <legend>Your Information</legend>
+    <label for="yearlySalary">Your yearly salary</label>
+    <input type="number" id="yearlySalary" min="0" max="100000000" required>
+    <br>
+    <label for="creditScore">Your credit score</label>
+    <input type="number" id="creditScore" min="0" max="900" required>
+    <br>
+    <label for="monthsWorked">The number of months you have worked at your current job</label>
+    <input type="number" id="monthsWorked" min="0" max="10000" required>
+    <br>
+</fieldset>
+<br>
+<button>Check if you're approved</button>
+
+<p class="output">You are <span id="totalApproval"></span></p>
+
+
+</body>
+</html>
